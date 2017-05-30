@@ -75,12 +75,12 @@
     this.dbname = dbname;
     this.openSuccess = openSuccess;
     this.openError = openError;
-    this.openSuccess || (this.openSuccess = function() {
-      //console.log("DB opened: " + dbname);
-    });
-    this.openError || (this.openError = function(e) {
-      console.log(e.message);
-    });
+    // this.openSuccess || (this.openSuccess = function() {
+    //   console.log("DB opened: " + dbname);
+    // });
+    // this.openError || (this.openError = function(e) {
+    //   console.log(e.message);
+    // });
     this.open(this.openSuccess, this.openError);
   };
 
